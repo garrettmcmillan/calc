@@ -9,7 +9,10 @@ class Btn extends Component {
 
    render() {
       return (
-         <div className={`btnStyle ${this.isOperator(this.props.children) ? null : 'operator'}`}>
+         <div
+            className={`btnStyle ${this.isOperator(this.props.children) ? null : 'operator'}`}
+            onClick={() => this.props.handleClick(this.props.children)}
+         >
             {this.props.children}
          </div>
       );
