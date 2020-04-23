@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import Btn from './components/Btn';
-
+import Input from './components/Input';
+import ClearBtn from './components/ClearBtn';
 import './App.css';
+
 
 class App extends Component {
   render() {
     return (
       <div className="app">
         <div className="calc-wrapper">
+          <div className="row">
+            <Input></Input>
+          </div>
           <div className="row">
             <Btn>7</Btn>
             <Btn>8</Btn>
@@ -31,6 +36,9 @@ class App extends Component {
             <Btn>0</Btn>
             <Btn>=</Btn>
             <Btn>-</Btn>
+          </div>
+          <div className="row">
+            <ClearBtn></ClearBtn>
           </div>
         </div>
       </div>
